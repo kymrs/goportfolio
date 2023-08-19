@@ -1,0 +1,555 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color1 : #279EFF;
+    --color2 : #ffffff;
+    --color3 : #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* My Style */
+
+/* Container */
+.container {
+    margin: 4.5% 3% 0;
+    border: 2px solid red;
+}
+
+/* Header */
+.header {
+    background-color: var(--color1);
+    padding: 1.3em 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.header h1 {
+    font-family: 'robotobold';
+    color: var(--color2);
+    font-size: 1.3rem;
+}
+
+.header nav a {
+    font-family: 'robotomedium';
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header nav a:hover {
+    color:#b0d7f7;
+}
+
+.header #menu {
+    display: none;
+}
+
+.header nav a:nth-child(1),
+.header nav a:nth-child(2),
+.header nav a:nth-child(3) {
+    margin-right: 3.6em;
+}
+
+/* Home */
+.home {
+    padding: 11em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home aside:nth-child(1) h2 {
+    font-family: 'robotomedium';
+}
+
+.home aside:nth-child(1) h1 {
+    font-family: 'robotobold';
+    font-size: 2.5em;
+    margin: 0.4em 0;
+}   
+
+.home aside:nth-child(1) h1 span {
+    color: var(--color1);
+}
+
+.home aside:nth-child(1) h3 {
+    font-family: "robotomedium";
+}
+
+.home aside:nth-child(1) p {
+    font-family: "robotolight_italic";
+    margin: 1.2em 0;
+}
+
+.home aside:nth-child(1) .cta {
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.home aside:nth-child(1) .cta a {
+    font-family: "robotolight";
+    background-color: var(--color1);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.8em;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.065);
+}
+
+.home aside:nth-child(1) .cta a:nth-child(1) {
+    margin-right: 2em;
+}
+
+.home aside:nth-child(2) .variation {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(var(--color1) 60%, var(--color2));
+    position: relative;
+    z-index: -9999;
+    margin: 0 auto;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 50%;
+}
+
+.home aside:nth-child(2) {
+    width: 50%;
+}
+
+.home aside:nth-child(2) .img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+} 
+.home aside:nth-child(2) img {
+    text-align: center;
+} 
+
+
+
+/* About */
+.about {
+    padding: 0 0 2em;
+}
+
+.about h1 {
+    font-family: "robotobold";
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 1em;
+    padding-top: 100px;
+}
+
+.about p {
+    font-family: "robotolight";
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Skill */
+.skill {
+    text-align: center;
+    padding: 0 10em;
+}
+
+.skill h1 {
+    font-family: 'robotomedium';
+    font-size: 1.3rem;
+    margin: 1em 0;
+    color: var(--color1);
+}
+
+.skill-card {
+    text-align: center;
+    margin: 0 0 3em;
+    justify-content: center;
+}
+
+.skill .skill-card .card {
+    width: 35%;
+}
+
+.skill .card h2 {
+    font-family: 'robotomedium';
+    font-size: 1rem;
+    color: var(--color1);
+}
+
+.skill .logo {
+    width: 60%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill .card p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-family: 'robotolight';
+}
+
+/* Portfolio */
+.portfolio {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.portfolio h2 {
+    font-size: 1.4rem;
+    font-family: "robotobold" ;
+}
+
+.portfolio h1 {
+    font-size: 1.3rem;
+    margin: 1.2em 0;
+    font-family: "robotomedium";
+    color: var(--color1);
+}
+
+.portfolio-card {
+    text-align: center;
+    margin: 0 0 3em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfolio-card .card {
+    width: 500px;
+    padding: 0 0 3.5em;
+}
+
+.portfolio .card .img {
+    border: 2px solid var(--color3);
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.portfolio .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .portfolio-card .card p {
+    width: 60%;
+    margin: 1em auto 1.5em;
+    line-height: 1.3;
+    font-family: 'robotolight';
+  
+}
+
+.portfolio-card .card a {
+    font-size: 1rem;
+    background-color: var(--color1);
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    font-family: 'robotolight';
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.portfolio-card .card a:hover {
+    background-color: #1b66a3;
+}
+
+
+/* Contact */
+.contact {
+    padding: 5em 0 12em;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.4rem;
+    font-family: 'robotobold';
+}
+
+.contact h1 {
+    font-family: 'robotomedium';
+    font-size: 1.3rem;
+    color: var(--color1);
+    margin: 1em 0;
+}
+
+.contact .links {
+    width: 23%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .links img {
+    width: 50px;
+    height: 50px;
+    transition: 300ms
+}
+
+.contact .links img:hover {
+    transform: scale(0.9);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color1);
+    padding: 0 3%;
+}
+
+.footer aside {
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer aside h1 {
+    padding: 1.5em 0;
+    font-size: 1.2rem;
+    font-family: 'robotomedium';
+}
+
+.footer aside .side-bar p {
+    margin-top: 0.5em;
+    font-family: 'robotolight';
+    color: var(--color2);
+} 
+
+.footer aside .side-bar a {
+    margin-bottom: 6em;
+    font-family: 'robotolight';
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.copyright .line {
+    width: 100%;
+    height: 1px;
+    border-radius: 10px;
+    margin-top: 2em;
+    background-color: var(--color3);
+}
+
+.copyright p {
+    font-family: 'robotolight';
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 82%;
+    }
+
+    .header #menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(39, 158, 255, 0.7);
+        width: 20em;
+        transition: 0.3s;   
+        border-radius: 5px;
+    }
+
+    .header nav.active {
+        right: 0;
+    }
+
+    .header {
+        margin: 0;
+        text-align: center;
+    }
+
+    .header nav a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+
+    .header nav a:nth-child(1),
+    .header nav a:nth-child(2),
+    .header nav a:nth-child(3),
+    .header nav a:nth-child(4) {
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .home aside:nth-child(2) {
+        margin: 10em auto 0;
+        width: 100%;
+    }
+
+    .skill {
+        padding: 0;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .skill-card .card {
+        margin: 0 auto;
+    }
+
+    .skill-card .card .logo {
+        width: 100%;
+    }
+
+    .skill-card .card .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-card .card p {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .portfolio-card .card .img {
+        width: 85%;
+        height: 85%;
+        margin: 0 auto;
+    }
+
+    .portfolio-card .card{
+        margin-bottom: 1.5em;
+    }
+
+    .contact .links {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+        display: flex;
+    }
+
+    .skill-card {
+        display: flex;
+    }
+
+    .footer aside {
+        display: flex;
+    }
+}
